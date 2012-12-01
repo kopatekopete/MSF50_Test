@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8b84cc52-893a-44da-8382-be6ab1c301f9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="35e44829-c6d2-4e56-90bc-c5c26ca60b8a" name="Comment1">
+      <body>Presentación</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="301ec7b4-d6ae-43a9-8ea5-31c8f9a10be8" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="90deddae-6fba-439a-9845-ace9af1c87fc" name="Comment2">
+      <body>Lógica de Negocio</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="41e03aed-75f2-434b-a343-61741e7b415e" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="ad783cf2-f008-43e3-8e30-f15d336162f5" name="Comment3">
+      <body>Acceso a Datos
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="5c479e0c-1ba8-4885-a179-517020bfbccd" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="301ec7b4-d6ae-43a9-8ea5-31c8f9a10be8" name="Kenwin.PPP.Cliente">
+      <description>UI</description>
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="55e62fed-2e2d-4450-a6f4-a9df2bb02b16" direction="Forward">
+          <layerMoniker Id="41e03aed-75f2-434b-a343-61741e7b415e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="ebc9f638-414e-450c-a52d-a81b867b412e" name="Kenwin.PPP.Cliente">
+          <ArtifactNode Label="Kenwin.PPP.Cliente" Category="CodeSchema_Project" Id="(Assembly=../Kenwin.PPP.Cliente/Kenwin.PPP.Cliente.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Kenwin.PPP.Cliente)" Label="Kenwin.PPP.Cliente.exe" Category="FileSystem.Category.FileOfType.exe">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="41e03aed-75f2-434b-a343-61741e7b415e" name="Kenwin.PPP.Negocio">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f385a6a9-7ba9-415a-8815-7227ab674741" direction="Forward">
+          <layerMoniker Id="5c479e0c-1ba8-4885-a179-517020bfbccd" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="0766a036-e5dc-470c-88c1-a432dd353564" name="Kenwin.PPP.Negocio">
+          <ArtifactNode Label="Kenwin.PPP.Negocio" Category="CodeSchema_Project" Id="(Assembly=../Kenwin.PPP.Datos/Kenwin.PPP.Negocio.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Kenwin.PPP.Negocio)" Label="Kenwin.PPP.Negocio.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="5c479e0c-1ba8-4885-a179-517020bfbccd" name="System.Data.Entity">
+      <description>Acceso a datos con Entity Framework 4</description>
+    </layer>
+  </layers>
+</layerModel>

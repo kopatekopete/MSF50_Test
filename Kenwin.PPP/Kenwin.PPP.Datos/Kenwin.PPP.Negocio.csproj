@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kenwin.PPP.Negocio</RootNamespace>
+    <AssemblyName>Kenwin.PPP.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vemn.Fwk.Common">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Data">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Data.EF">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Data.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Data.Linq">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.ExceptionManagement">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.ExceptionManagement.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comun\Formatos.cs" />
+    <Compile Include="Comun\Excepciones\PPPNegocioException.cs" />
+    <Compile Include="Comun\UtilidadesDecimal.cs" />
+    <Compile Include="Entidades\ActividadCustom.cs" />
+    <Compile Include="Entidades\DatoAsignacionSemanal.cs" />
+    <Compile Include="Entidades\DetalleProyectoVersion.cs" />
+    <Compile Include="Entidades\Filtros\FiltroResumenProyecto.cs" />
+    <Compile Include="Entidades\ResumenProyecto.cs" />
+    <Compile Include="Modelo\Persona.cs" />
+    <Compile Include="Modelo\PPPModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PPPModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Rol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\ActividadRateRepository.cs" />
+    <Compile Include="Repositorios\ActividadRepository.cs" />
+    <Compile Include="Repositorios\ClienteRepository.cs" />
+    <Compile Include="Repositorios\RolRepository.cs" />
+    <Compile Include="Repositorios\IdiomaRepository.cs" />
+    <Compile Include="Repositorios\ProyectoAsignacionRepository.cs" />
+    <Compile Include="Repositorios\PersonaRepository.cs" />
+    <Compile Include="Repositorios\TipoEmpresaRepository.cs" />
+    <Compile Include="Repositorios\TipoProyectoRepository.cs" />
+    <Compile Include="Repositorios\MonedaRepository.cs" />
+    <Compile Include="Repositorios\ProyectoOTRepository.cs" />
+    <Compile Include="Repositorios\ProyectoPadreRepository.cs" />
+    <Compile Include="Repositorios\RepositoryFactory.cs" />
+    <Compile Include="Repositorios\UnidadMedidaRepository.cs" />
+    <Compile Include="Repositorios\UnidadNegocioRepository.cs" />
+    <Compile Include="Repositorios\ProyectoRepository.cs" />
+    <Compile Include="Repositorios\PaisRepository.cs" />
+    <Compile Include="Repositorios\EstadoProyectoRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Modelo\PPPModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PPPModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kenwin.PPP.Test</RootNamespace>
+    <AssemblyName>Kenwin.PPP.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2">
+      <HintPath>..\..\Assemblies\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.ConnectionUI">
+      <HintPath>..\..\Assemblies\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>..\..\Assemblies\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Vemn.Fwk.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=201fe70679a421e1, processorArchitecture=MSIL" />
+    <Reference Include="Vemn.Fwk.Data.EF, Version=1.0.0.1, Culture=neutral, PublicKeyToken=201fe70679a421e1, processorArchitecture=MSIL" />
+    <Reference Include="Vemn.Fwk.ExceptionManagement, Version=1.0.0.1, Culture=neutral, PublicKeyToken=201fe70679a421e1, processorArchitecture=MSIL" />
+    <Reference Include="Vemn.Fwk.Windows">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Controls">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Controls2">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.Controls2.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Tools, Version=1.0.0.1, Culture=neutral, PublicKeyToken=201fe70679a421e1, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculationManagerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kenwin.PPP.Cliente\Kenwin.PPP.Cliente.csproj">
+      <Project>{44F74F1D-C098-4A27-B2FD-A85D854C3203}</Project>
+      <Name>Kenwin.PPP.Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kenwin.PPP.Datos\Kenwin.PPP.Negocio.csproj">
+      <Project>{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}</Project>
+      <Name>Kenwin.PPP.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vemn.Fwk.ClientServer.Windows\Vemn.Fwk.ClientServer.Windows.csproj">
+      <Project>{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}</Project>
+      <Name>Vemn.Fwk.ClientServer.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\Kenwin.PPP.Cliente.accessor" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

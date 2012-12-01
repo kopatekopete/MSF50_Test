@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f88a3547-7e02-4ec7-8059-c1f8aa3ad4a5}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Arquitectura</Name>
+    <RootNamespace>PPP_ModelingProject</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="PPP.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PPP.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PPP.componentdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\PPP_ModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="PPP.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="PPP.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PPP.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="PPP.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>PPP.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kenwin.PPP.Cliente\Kenwin.PPP.Cliente.csproj">
+      <Name>Kenwin.PPP.Cliente</Name>
+      <Project>{44f74f1d-c098-4a27-b2fd-a85d854c3203}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Kenwin.PPP.Datos\Kenwin.PPP.Negocio.csproj">
+      <Name>Kenwin.PPP.Negocio</Name>
+      <Project>{8c21c944-2e15-4852-8529-7edc1f0d4fe0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

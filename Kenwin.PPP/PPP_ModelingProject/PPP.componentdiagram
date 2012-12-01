@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3b341faa-b895-497e-873e-dcf327977750" name="PPP Diagrama de Componentes" linkedPackageId="aa599ae7-aebd-410b-9e87-4176b94cdf0b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="a920091f-b0e0-4806-92c7-37d9aea47218" name="Kenwin.PPP.Cliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="94b3bbe4-0edd-4e2b-ae14-4633ad4b0bf7" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="5c9c0316-9348-4eb9-8a95-44ae5d2c78fa" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="0a4003c3-267b-4523-b3ee-3bf54b472e38" />
+        <suppliersInternal>
+          <dependency Id="19c96cf4-eba6-418c-8b9a-06e7c5dd0d39">
+            <componentMoniker Id="f8962850-33b1-4c50-9e36-03ec86e48141" LastKnownName="Kenwin.PPP.Negocio" />
+            <elementDefinition Id="5ed3a38e-3ba4-4bf3-81a8-da89ad8fdb49" />
+          </dependency>
+          <dependency Id="726488f7-4759-4caa-baf5-ab916ec63192">
+            <componentMoniker Id="14f9a96b-4012-4d35-94bb-d7be909e230e" LastKnownName="Vemn.Fwk.ClientServer.Data" />
+            <elementDefinition Id="baa62350-b096-4487-a252-25e3d7dafd9b" />
+          </dependency>
+          <dependency Id="57ad2efa-a862-4a80-9f49-00b337288819">
+            <componentMoniker Id="7230f805-aa96-463b-9eb7-3fe4216e49e3" LastKnownName="Vemn.Fwk.ClientServer.Windows" />
+            <elementDefinition Id="19bf39f1-d96b-4b8b-960e-6e88120b1051" />
+          </dependency>
+          <dependency Id="2ae1973b-b9a9-44b9-ad05-3281ed76a394">
+            <componentMoniker Id="99068b8c-e1a1-4fd2-b8ae-4835e60e7030" LastKnownName="Vemn.Fwk.Windows" />
+            <elementDefinition Id="19548eea-6517-4dca-8e2f-52fe4ae8c1b5" />
+          </dependency>
+          <dependency Id="18a7051c-9359-43a1-aea1-b3238d87d480">
+            <componentMoniker Id="5dbb9194-7ecd-48c1-a84b-8a39c74762c0" LastKnownName="Vemn.Fwk.Windows.Controls" />
+            <elementDefinition Id="df5f767d-3542-4b52-961b-02c9e030ca9d" />
+          </dependency>
+          <dependency Id="67e07bc6-6c97-4c9b-ab1d-a6b306e698df">
+            <componentMoniker Id="b2e91a6c-f5c6-4db1-8652-4c3b4952b726" LastKnownName="Vemn.Fwk.Windows.Tools" />
+            <elementDefinition Id="14168666-73e4-44c7-b0a0-df50b094a25a" />
+          </dependency>
+          <dependency Id="87267e8d-7f4d-47ab-8839-edb7a14f5e27">
+            <componentMoniker Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" LastKnownName="C1.Win.C1FlexGrid.2" />
+            <elementDefinition Id="c8ea94c3-5f6c-4efd-abd0-bf1499fdb255" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f8962850-33b1-4c50-9e36-03ec86e48141" name="Kenwin.PPP.Negocio" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="53e4a0fa-c56a-4421-b07e-a43e0a49d541" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="f70503cf-bde0-49a6-95a7-d5f9fbf47d7e" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="8885ca70-49dc-4cc2-b798-c51a2f855a1f" />
+        <suppliersInternal>
+          <dependency Id="4d824b28-4374-4b8f-a384-366e7fab7bab">
+            <componentMoniker Id="14f9a96b-4012-4d35-94bb-d7be909e230e" LastKnownName="Vemn.Fwk.ClientServer.Data" />
+            <elementDefinition Id="cd752952-8ce0-4799-8246-dc242fcb67d4" />
+          </dependency>
+          <dependency Id="2f93b533-b238-47cc-af15-25a73ff36771">
+            <componentMoniker Id="456a22ff-3082-4a22-a79c-a43a9cdd601e" LastKnownName="System.Data.Entity" />
+            <elementDefinition Id="cf10e6f3-228e-46a8-bbcf-42ca2dbadf70" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="14f9a96b-4012-4d35-94bb-d7be909e230e" name="Vemn.Fwk.ClientServer.Data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0a39a5cc-ae31-4be3-9f40-6086bd868e5e" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="2e2b1495-cc87-4ada-a025-294a60304cd0" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="0e78c232-173e-4ebe-8939-ab9e3645123f" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7230f805-aa96-463b-9eb7-3fe4216e49e3" name="Vemn.Fwk.ClientServer.Windows" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="97dba043-572e-4fde-b7ee-8c37f2a36509" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="128b7d23-a1ae-4790-8a8b-a60b9ca2afa1" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="667a09f4-5ad4-4fd3-a871-bb4cedf1cbbf" />
+        <suppliersInternal>
+          <dependency Id="d6461c71-824a-43d5-b0f7-c9f9d8d3ebb4">
+            <componentMoniker Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" LastKnownName="C1.Win.C1FlexGrid.2" />
+            <elementDefinition Id="064dc37d-b7cc-4a5d-88d5-0021ded2ba3c" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="99068b8c-e1a1-4fd2-b8ae-4835e60e7030" name="Vemn.Fwk.Windows" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="026675ed-092b-423d-aed8-673a996fd478" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="a26d80e6-ad53-4b14-88fb-473e8c21e4e7" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4c867192-3ea1-47b4-9dca-f53efa37b959" />
+        <suppliersInternal>
+          <dependency Id="a18a8d7d-7859-4f4b-ac7d-3ee1d6ebebe9">
+            <componentMoniker Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" LastKnownName="C1.Win.C1FlexGrid.2" />
+            <elementDefinition Id="6ffd690e-2b8c-465a-b965-1083e90319be" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5dbb9194-7ecd-48c1-a84b-8a39c74762c0" name="Vemn.Fwk.Windows.Controls" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c34fae50-0881-4e7d-901c-b66d7c1acf45" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="4bc96602-b89e-4589-a312-2fc22077645e" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d4d293ee-8f85-4217-b6ec-9f78f4f2e347" />
+        <suppliersInternal>
+          <dependency Id="8c5cb191-8443-42a3-8763-9f720efb037a">
+            <componentMoniker Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" LastKnownName="C1.Win.C1FlexGrid.2" />
+            <elementDefinition Id="b01c2028-49a5-4d02-86ac-2f79923413e5" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b2e91a6c-f5c6-4db1-8652-4c3b4952b726" name="Vemn.Fwk.Windows.Tools" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="fe571f12-b182-4125-91aa-9db7730de2ee" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="592548df-48d4-46fa-adb1-78489d0a74db" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="763ab10d-aaaf-4b5d-8ba7-355edcb7fbb1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" name="C1.Win.C1FlexGrid.2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>Component One</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="5918d040-173a-4cc3-8120-bf0d70b86c72" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="12f9f17c-9743-4508-8bb0-d7dd790a26d9" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="91cffffc-1c7c-4e6c-88f8-63c68518d8e5" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="456a22ff-3082-4a22-a79c-a43a9cdd601e" name="System.Data.Entity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>Entity Framework 4</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a978242e-0d20-48a2-b4ea-a9c6c1a50cd7" name="buildComponent" profile="StandardProfileL3">
+            <elementDefinition Id="8d1fb375-2194-491b-b18f-5a9201c6be50" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2d273ffa-5624-4e3d-9bee-0a12f3dfe6f5" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="aa599ae7-aebd-410b-9e87-4176b94cdf0b" name="PPP_ModelingProject">
+    <elementDefinition Id="aede3fa2-c74c-4bd9-a565-2960172c0b63" />
+    <profileInstances>
+      <packageHasProfileInstances Id="39a68a97-ec9a-4013-bb4d-17d55ca0d998">
+        <profileInstance Id="f2adc59d-b24e-4cf6-b725-8160ae9149c0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="16f5f1d5-1a6c-474e-aaf1-43f89cb83e0d">
+        <profileInstance Id="d42d8498-b682-43a6-94ed-4b0fa101d096" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

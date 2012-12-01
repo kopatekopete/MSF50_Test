@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81131E49-053A-4A5B-9B9C-77A177A98AEF}"
+	ProjectSection(SolutionItems) = preProject
+		Kenwin.PPP.vsmdi = Kenwin.PPP.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kenwin.PPP.Cliente", "Kenwin.PPP.Cliente\Kenwin.PPP.Cliente.csproj", "{44F74F1D-C098-4A27-B2FD-A85D854C3203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kenwin.PPP.Negocio", "Kenwin.PPP.Datos\Kenwin.PPP.Negocio.csproj", "{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Arquitectura", "PPP_ModelingProject\Arquitectura.modelproj", "{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "Kenwin.PPP.BaseDatos", "Kenwin.PPP.BaseDatos\Kenwin.PPP.BaseDatos.dbproj", "{67CBC824-A49E-4E9B-A947-360F3DFE65C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kenwin.PPP.Test", "Kenwin.PPP.Test\Kenwin.PPP.Test.csproj", "{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vemn.Fwk.ClientServer.Windows", "Vemn.Fwk.ClientServer.Windows\Vemn.Fwk.ClientServer.Windows.csproj", "{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://teamserver.vemn.local:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Kenwin.PPP.BaseDatos\\Kenwin.PPP.BaseDatos.dbproj
+		SccProjectName1 = Kenwin.PPP.BaseDatos
+		SccLocalPath1 = Kenwin.PPP.BaseDatos
+		SccProjectUniqueName2 = Kenwin.PPP.Cliente\\Kenwin.PPP.Cliente.csproj
+		SccProjectName2 = Kenwin.PPP.Cliente
+		SccLocalPath2 = Kenwin.PPP.Cliente
+		SccProjectUniqueName3 = Kenwin.PPP.Datos\\Kenwin.PPP.Negocio.csproj
+		SccProjectName3 = Kenwin.PPP.Datos
+		SccLocalPath3 = Kenwin.PPP.Datos
+		SccProjectUniqueName4 = Kenwin.PPP.Test\\Kenwin.PPP.Test.csproj
+		SccProjectName4 = Kenwin.PPP.Test
+		SccLocalPath4 = Kenwin.PPP.Test
+		SccProjectUniqueName5 = PPP_ModelingProject\\Arquitectura.modelproj
+		SccProjectName5 = PPP_ModelingProject
+		SccLocalPath5 = PPP_ModelingProject
+		SccProjectUniqueName6 = Vemn.Fwk.ClientServer.Windows\\Vemn.Fwk.ClientServer.Windows.csproj
+		SccProjectName6 = Vemn.Fwk.ClientServer.Windows
+		SccLocalPath6 = Vemn.Fwk.ClientServer.Windows
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Kenwin.PPP.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Debug|x86.ActiveCfg = Debug|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Debug|x86.Build.0 = Debug|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Release|Any CPU.ActiveCfg = Release|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Release|Mixed Platforms.Build.0 = Release|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Release|x86.ActiveCfg = Release|x86
+		{44F74F1D-C098-4A27-B2FD-A85D854C3203}.Release|x86.Build.0 = Release|x86
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}.Release|x86.ActiveCfg = Release|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F88A3547-7E02-4EC7-8059-C1F8AA3AD4A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7FB4C6AA-D6D1-4137-B43A-38D63C6D0A7F}.Release|x86.ActiveCfg = Release|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\Kenwin.PPP.ndproj"
+	EndGlobalSection
+EndGlobal

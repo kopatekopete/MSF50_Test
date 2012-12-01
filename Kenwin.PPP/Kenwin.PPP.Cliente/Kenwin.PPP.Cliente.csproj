@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44F74F1D-C098-4A27-B2FD-A85D854C3203}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kenwin.PPP.Cliente</RootNamespace>
+    <AssemblyName>Kenwin.PPP.Cliente</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2">
+      <HintPath>..\..\Assemblies\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2">
+      <HintPath>..\..\Assemblies\C1.Win.C1Input.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI">
+      <HintPath>..\..\Assemblies\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>..\..\Assemblies\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vemn.Fwk.Common">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Data.EF">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Data.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Data.Linq">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.ExceptionManagement">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Controls">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Controls2">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.Controls2.dll</HintPath>
+    </Reference>
+    <Reference Include="Vemn.Fwk.Windows.Tools">
+      <HintPath>..\..\Assemblies\Vemn.Fwk.Windows.Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABMs\ABMCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMCliente.designer.cs">
+      <DependentUpon>ABMCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMTarifa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMTarifa.designer.cs">
+      <DependentUpon>ABMTarifa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMIdioma.designer.cs">
+      <DependentUpon>ABMIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMPais.designer.cs">
+      <DependentUpon>ABMPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMUnidadNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMUnidadNegocio.designer.cs">
+      <DependentUpon>ABMUnidadNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMRol.designer.cs">
+      <DependentUpon>ABMRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\ABMPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ABMPersona.designer.cs">
+      <DependentUpon>ABMPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Base\PPPFormCrudBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Calculations\CalculationManager.cs" />
+    <Compile Include="Comun\Calculations\FormulaExecutionEventArgs.cs" />
+    <Compile Include="Comun\Controles\CollapsableGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\CollapsableGroupBox.Designer.cs">
+      <DependentUpon>CollapsableGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ActividadSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\Base\DescripcionFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\Base\DescripcionFKBox.designer.cs">
+      <DependentUpon>DescripcionFKBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ActividadFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\IdiomaFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\IdiomaSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\UnidadMedidaFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ProyectoPadreFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ProyectoOTFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\UnidadMedidaSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\UnidadNegocioFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\TipoProyectoFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\TipoEmpresaFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\PaisFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ClienteFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\MonedaFKBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\FKBoxes\ClienteSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\UnidadNegocioSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\TipoProyectoSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\TipoEmpresaSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\PaisSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\MonedaSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\ProyectoOTSelector.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\ProyectoPadreSelector.cs" />
+    <Compile Include="Comun\Controles\PPPC1FlexGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\PPPUserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\PPPUserControlBase.Designer.cs">
+      <DependentUpon>PPPUserControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Controles\SelectorForms\ProyectoOTSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comun\Controles\SelectorForms\ProyectoPadreSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comun\Excepciones\PPPExceptionHandler.cs" />
+    <Compile Include="Comun\Formularios\NuevoItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comun\Formularios\NuevoItemForm.Designer.cs">
+      <DependentUpon>NuevoItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Formularios\IPPPForm.cs" />
+    <Compile Include="Comun\Formularios\PPPFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comun\Formularios\PPPMDIFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comun\ClaseValidadora.cs" />
+    <Compile Include="ConexionDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConexionDB.Designer.cs">
+      <DependentUpon>ConexionDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContextoAplicacion.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos\AgregarAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos\AgregarAsignacion.Designer.cs">
+      <DependentUpon>AgregarAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos\AsignacionPersonal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyectos\AsignacionPersonal.Designer.cs">
+      <DependentUpon>AsignacionPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos\AsignacionSemanal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyectos\AsignacionSemanal.Designer.cs">
+      <DependentUpon>AsignacionSemanal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos\Buscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos\Buscador.Designer.cs">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Constantes.cs" />
+    <Compile Include="Comun\Controles\FKBoxes\ActividadCustomSelector.cs" />
+    <Compile Include="Proyectos\OrdenColumnasEnum.cs" />
+    <Compile Include="Proyectos\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos\Formulas\FormulasDatosProyectoVersion.cs" />
+    <Compile Include="Proyectos\SeleccionTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos\SeleccionTemplate.Designer.cs">
+      <DependentUpon>SeleccionTemplate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABMs\ABMCliente.resx">
+      <DependentUpon>ABMCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMTarifa.resx">
+      <DependentUpon>ABMTarifa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMIdioma.resx">
+      <DependentUpon>ABMIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMPais.resx">
+      <DependentUpon>ABMPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMUnidadNegocio.resx">
+      <DependentUpon>ABMUnidadNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMRol.resx">
+      <DependentUpon>ABMRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ABMPersona.resx">
+      <DependentUpon>ABMPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comun\Controles\CollapsableGroupBox.resx">
+      <DependentUpon>CollapsableGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comun\Controles\FKBoxes\Base\DescripcionFKBox.resx">
+      <DependentUpon>DescripcionFKBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comun\Formularios\NuevoItemForm.resx">
+      <DependentUpon>NuevoItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comun\Formularios\PPPMDIFormBase.resx">
+      <DependentUpon>PPPMDIFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConexionDB.resx">
+      <DependentUpon>ConexionDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\AgregarAsignacion.resx">
+      <DependentUpon>AgregarAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\AsignacionPersonal.resx">
+      <DependentUpon>AsignacionPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\AsignacionSemanal.resx">
+      <DependentUpon>AsignacionSemanal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\Buscador.resx">
+      <DependentUpon>Buscador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos\SeleccionTemplate.resx">
+      <DependentUpon>SeleccionTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kenwin.PPP.Datos\Kenwin.PPP.Negocio.csproj">
+      <Project>{8C21C944-2E15-4852-8529-7EDC1F0D4FE0}</Project>
+      <Name>Kenwin.PPP.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vemn.Fwk.ClientServer.Windows\Vemn.Fwk.ClientServer.Windows.csproj">
+      <Project>{94C8CA8E-E623-4A1C-ACB9-C95C252AC982}</Project>
+      <Name>Vemn.Fwk.ClientServer.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom2_16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaDerecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaIzquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaDerechaAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaIzquierdaAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

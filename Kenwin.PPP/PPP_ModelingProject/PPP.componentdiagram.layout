@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="3b341faa-b895-497e-873e-dcf327977750" />
+  <nestedChildShapes>
+    <componentShape Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" isExpanded="false" absoluteBounds="0.75, 6.625, 1.9583333333333335, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.9583333333333335" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.9583333333333335" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="a920091f-b0e0-4806-92c7-37d9aea47218" LastKnownName="Kenwin.PPP.Cliente" />
+    </componentShape>
+    <componentShape Id="bd971df6-0399-4e50-b6e7-1d7946ee9bc6" isExpanded="false" absoluteBounds="3.25, 6.625, 1.802083333333333, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="f8962850-33b1-4c50-9e36-03ec86e48141" LastKnownName="Kenwin.PPP.Negocio" />
+    </componentShape>
+    <componentShape Id="9fff96be-e22a-439e-8088-0def4723d3f8" isExpanded="false" absoluteBounds="6.125, 5.375, 2.7089843650439676, 0.7" customColor="255, 192, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="14f9a96b-4012-4d35-94bb-d7be909e230e" LastKnownName="Vemn.Fwk.ClientServer.Data" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(2.70833333333333 : 7.04744040799666); (3.00833333333333 : 7.04744040799666); (3.00833333333333 : 7.04152097604563); (3.25 : 7.04152097604563)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="19c96cf4-eba6-418c-8b9a-06e7c5dd0d39" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="bd971df6-0399-4e50-b6e7-1d7946ee9bc6" />
+      </nodes>
+    </dependencyConnector>
+    <componentShape Id="2a1325d3-54bc-419d-9053-da0110b78848" isExpanded="false" absoluteBounds="6.125, 4.5, 2.6770833333333321, 0.7" customColor="255, 192, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="2.3333333333333321" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="2.3333333333333321" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="7230f805-aa96-463b-9eb7-3fe4216e49e3" LastKnownName="Vemn.Fwk.ClientServer.Windows" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(5.05208333333333 : 6.74415548096683); (5.42708333333333 : 6.74415548096683); (5.42708333333333 : 5.98175754060325); (6.125 : 5.98175754060325)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="4d824b28-4374-4b8f-a384-366e7fab7bab" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="bd971df6-0399-4e50-b6e7-1d7946ee9bc6" />
+        <componentShapeMoniker Id="9fff96be-e22a-439e-8088-0def4723d3f8" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(2.61280729692302 : 6.625); (2.61280729692302 : 5.51947524020695); (6.125 : 5.51947524020695)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="726488f7-4759-4caa-baf5-ab916ec63192" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="9fff96be-e22a-439e-8088-0def4723d3f8" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(2.50117954217053 : 6.625); (2.50117954217053 : 4.65511252446184); (6.125 : 4.65511252446184)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="57ad2efa-a862-4a80-9f49-00b337288819" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="2a1325d3-54bc-419d-9053-da0110b78848" />
+      </nodes>
+    </dependencyConnector>
+    <componentShape Id="71fc734e-d7e3-464f-8771-73e60ceeeb8a" isExpanded="false" absoluteBounds="6.125, 3.625, 2.6985155903530078, 0.7" customColor="255, 192, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="99068b8c-e1a1-4fd2-b8ae-4835e60e7030" LastKnownName="Vemn.Fwk.Windows" />
+    </componentShape>
+    <componentShape Id="9b73d362-b70d-4990-a43c-1d88da018b1b" isExpanded="false" absoluteBounds="6.125, 2.75, 2.7122916316214347, 0.7" customColor="255, 192, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="5dbb9194-7ecd-48c1-a84b-8a39c74762c0" LastKnownName="Vemn.Fwk.Windows.Controls" />
+    </componentShape>
+    <componentShape Id="79cf042d-0889-45b8-9fb5-c214665d9a2c" isExpanded="false" absoluteBounds="6.125, 1.875, 2.6985155903530078, 0.7" customColor="255, 192, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="b2e91a6c-f5c6-4db1-8652-4c3b4952b726" LastKnownName="Vemn.Fwk.Windows.Tools" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(2.40546673899467 : 6.625); (2.40546673899467 : 3.975); (6.125 : 3.975)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="2ae1973b-b9a9-44b9-ad05-3281ed76a394" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="71fc734e-d7e3-464f-8771-73e60ceeeb8a" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(2.28318969529176 : 6.625); (2.28318969529176 : 3.1); (6.125 : 3.1)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="18a7051c-9359-43a1-aea1-b3238d87d480" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="9b73d362-b70d-4990-a43c-1d88da018b1b" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(2.08471551473728 : 6.625); (2.08471551473728 : 2.225); (6.125 : 2.225)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="67e07bc6-6c97-4c9b-ab1d-a6b306e698df" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="79cf042d-0889-45b8-9fb5-c214665d9a2c" />
+      </nodes>
+    </dependencyConnector>
+    <componentShape Id="6cb4e92b-fdeb-4022-88c1-1a9b1a0718bc" isExpanded="false" absoluteBounds="6.125, 1, 2.7122916316214329, 0.7" customColor="128, 255, 128" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="c68e1ac3-55fa-4b1e-8ec8-a97b87edfa29" LastKnownName="C1.Win.C1FlexGrid.2" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(1.91006986732936 : 6.625); (1.91006986732936 : 1.35); (6.125 : 1.35)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="87267e8d-7f4d-47ab-8839-edb7a14f5e27" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="5eb4744c-ec9c-4abe-8d04-ebfbafd2aff7" />
+        <componentShapeMoniker Id="6cb4e92b-fdeb-4022-88c1-1a9b1a0718bc" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(8.80208333333333 : 4.85); (10.1134638072936 : 4.85); (10.1134638072936 : 1.17365557939427); (8.83729163162143 : 1.17365557939427)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="d6461c71-824a-43d5-b0f7-c9f9d8d3ebb4" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="2a1325d3-54bc-419d-9053-da0110b78848" />
+        <componentShapeMoniker Id="6cb4e92b-fdeb-4022-88c1-1a9b1a0718bc" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(8.82351559035301 : 3.975); (9.90708356909217 : 3.975); (9.90708356909217 : 1.43146465359857); (8.83729163162143 : 1.43146465359857)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="a18a8d7d-7859-4f4b-ac7d-3ee1d6ebebe9" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="71fc734e-d7e3-464f-8771-73e60ceeeb8a" />
+        <componentShapeMoniker Id="6cb4e92b-fdeb-4022-88c1-1a9b1a0718bc" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(8.83729163162143 : 3.1); (9.21229163162143 : 3.1); (9.21229163162143 : 1.65725916463151); (8.83729163162143 : 1.65725916463151)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="8c5cb191-8443-42a3-8763-9f720efb037a" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="9b73d362-b70d-4990-a43c-1d88da018b1b" />
+        <componentShapeMoniker Id="6cb4e92b-fdeb-4022-88c1-1a9b1a0718bc" />
+      </nodes>
+    </dependencyConnector>
+    <componentShape Id="f1c03716-7058-43f5-a82a-3b42210ce4c8" isExpanded="false" absoluteBounds="6, 6.5, 1.8670830643413812, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="1.5875064855813985" whiteBoxBoundsWidth="2.2390361785888668" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="2.2390361785888668" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="456a22ff-3082-4a22-a79c-a43a9cdd601e" LastKnownName="System.Data.Entity" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(5.05208333333333 : 7.06272303337882); (5.42708333333333 : 7.06272303337882); (5.42708333333333 : 7.04373460366177); (6 : 7.04373460366177)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="2f93b533-b238-47cc-af15-25a73ff36771" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="bd971df6-0399-4e50-b6e7-1d7946ee9bc6" />
+        <componentShapeMoniker Id="f1c03716-7058-43f5-a82a-3b42210ce4c8" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>
